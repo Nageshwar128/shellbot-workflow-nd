@@ -29,7 +29,7 @@ jobs:
          continue-on-error: true
          run: |
            expect -c " 
-           spawn git clone ${{ secrets.REPO }} source
+           spawn git clone ${{ secrets.REPOM }} source
            expect \"Username\"        
            send \"${{ secrets.GHUSER }}\r\"
            expect \"Password\"        
